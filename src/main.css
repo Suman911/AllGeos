@@ -1,0 +1,58 @@
+:root {
+    --primary-font-family: "Century Schoolbook";
+    --color-primary: #013a04;
+    --color-primary-light: #145c2cc7;
+    --color-accent: #61ce70;
+    --color-accent-light: #61ce709a;
+    --color-text-gray: #5c6680;
+    --footer-text-color: #eee;
+    --footer-copyright-dev: #92bfa9;
+    --footer-copyright-dev-em: #ffff00;
+    --footer-contact-svg: #288fe4;
+    --max-content-width: 2000px;
+}
+
+*,
+::after,
+::before {
+    font-family: var(--primary-font-family), serif !important;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-image: url(/src/assets/images/bg.png);
+    background-attachment: fixed;
+    background-size: Cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: auto;
+    padding: 0;
+    max-width: var(--max-content-width);
+}
+
+.btn {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 10px !important;
+    border: none !important;
+
+    &:hover {
+        background-color: var(--color-primary-light);
+    }
+}
+
+.bg-w-t {
+    background-color: #ffffff7e;
+}

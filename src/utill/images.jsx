@@ -1,0 +1,26 @@
+export {default as logo} from '../assets/images/AGS_hor_blackn.png'
+
+export {default as home_demo} from '../assets/images/home/1.png'
+export {default as home1} from '../assets/images/home/1-1.png'
+export {default as home2} from '../assets/images/home/1-2.png'
+export {default as home3} from '../assets/images/home/1-3.png'
+export {default as home4} from '../assets/images/home/1-4.png'
+
+export {default as footer1} from '../assets/images/footer/1-1.png'
+export {default as footer2} from '../assets/images/footer/1-2.png'
+export {default as footer3} from '../assets/images/footer/1-3.png'
+export {default as footer4} from '../assets/images/footer/2.jpeg'
+
+export {default as about_top} from '../assets/images/about/about_top.jpg'
+// export {default as about1} from '../assets/images/about/'
+// export {default as about2} from '../assets/images/about/about_top.jpg.webp'
+// export {default as about3} from '../assets/images/about/about_top.jpg.webp'
+// export {default as about_top} from '../assets/images/about/about_top.jpg.webp'
+// export {default as about_top} from '../assets/images/about/about_top.jpg.webp'
+// export {default as about_top} from '../assets/images/about/about_top.jpg.webp'
+// export {default as about_top} from '../assets/images/about/about_top.jpg.webp'
+
+export {default as products_top} from '../assets/images/products/products_top.jpg'
+export {default as products1} from '../assets/images/products/prods.png'
+export {default as products2} from '../assets/images/products/prods2.png'
+export {default as products3} from '../assets/images/products/floaTEM.png'

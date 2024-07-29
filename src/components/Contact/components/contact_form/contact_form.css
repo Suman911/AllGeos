@@ -1,0 +1,103 @@
+#contact {
+    padding-top: 50px;
+    color: var(--color-text-gray);
+
+    & h3 {
+        margin: 0;
+        padding-bottom: 30px;
+        text-align: center;
+        font-size: 2.5rem;
+        color: black;
+    }
+
+    & #contact-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        column-gap: 5%;
+        
+        & .contact-col {
+            max-width: 400px;
+            flex: 1 1 auto;
+
+            & h4 {
+                font-size: 1.8rem;
+                margin: 0;
+            }
+        }
+
+        & #contact-col-2 {
+            padding-top: 10px;
+            font-size: 1.2rem;
+
+            &>div {
+                padding-top: 25px;
+            }
+
+            & .contact-info {
+                padding: 10px 0;
+
+                & a{
+                    color: var(--color-text-gray);
+                }
+
+                & svg {
+                    fill: var(--footer-contact-svg);
+                    height: 1.2rem;
+                    width: auto;
+                    margin-right: 10px;
+                    vertical-align: middle;
+                }
+            }
+
+            & #socials {
+                width: 150px;
+                display: flex;
+                justify-content: space-between;
+                vertical-align: text-top;
+
+                & svg {
+                    height: 24px;
+                    width: 24px;
+                    fill: var(--color-text-gray);
+                }
+            }
+        }
+    }
+}
+
+
+#Contact-form {
+    padding: 25px 0px;
+
+    & label {
+        display: block;
+
+        &>input,
+        &>textarea {
+            width: 100%;
+            padding: 2px 5px;
+            font-size: 1.2rem;
+            border: 2px solid var(--color-text-gray);
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.5s ease;
+            resize: vertical;
+
+        }
+
+        &>textarea {
+            scrollbar-width: thin;
+            scrollbar-color: #b9b9b9 #fff;
+        }
+
+        &>.err-msg {
+            width: 100%;
+            font-size: 0.8rem;
+            min-height: 1rem;
+            color: red;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+    }
+}

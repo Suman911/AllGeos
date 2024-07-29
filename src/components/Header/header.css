@@ -1,0 +1,137 @@
+/* Top pregress bar start*/
+div#progressbar {
+    height: 5px;
+    width: 100%;
+    background-color: var(--color-accent);
+    position: fixed;
+    z-index: 100;
+    scale: 0 1;
+    transform-origin: left;
+    animation: scaleProgress auto linear;
+    animation-timeline: scroll();
+
+}
+
+@keyframes scaleProgress {
+    75% {
+        background-color: var(--color-primary);
+    }
+
+    100% {
+        scale: 1 1;
+        background-color: var(--color-primary);
+    }
+}
+
+/* Top pregress bar end*/
+
+/* navbar structure start */
+nav#head {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    padding: 5px 20px;
+    justify-content: space-between;
+
+    #logo>a>img {
+        height: 100%;
+        padding: 10px 20px;
+    }
+
+    #nav-links {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        width: 800px;
+        align-items: center;
+
+        &>.items {
+            display: block;
+
+            &>.links {
+                color: var(--color-primary);
+                padding: 10px 15px;
+                font-size: 1.2rem;
+
+                &.active {
+                    background-color: var(--color-primary-light);
+                    color: white;
+                }
+
+                &:has(.active) {
+                    background-color: var(--color-primary-light);
+                    color: white;
+
+                    & #arrow {
+                        fill: white;
+                    }
+                }
+
+                &:hover {
+                    background-color: var(--color-accent-light);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+/* navbar structure end */
+
+/* servicess option menu start */
+#services {
+    position: relative;
+
+    & #arrow {
+        width: auto;
+        margin-left: 5px;
+        height: 0.8rem;
+        fill: var(--color-primary);
+        transform: rotate(-90deg);
+        transition: transform 0.5s cubic-bezier(0.8, 2.5, 0.75, 0.3);
+    }
+
+    & ul {
+        z-index: 2;
+        background-color: darkslategray;
+        top: 50%;
+        padding: 0;
+        position: absolute;
+        transform: scale(0);
+        transition: all .3s ease;
+
+        & a {
+            & li {
+                transform: scale(0);
+                text-align: center;
+                padding: 0;
+                transition: background-color 0.5s ease-out;
+
+                color: white;
+            }
+        }
+    }
+
+    &:hover {
+        & #arrow {
+            fill: white;
+            transform: rotate(-180deg);
+        }
+
+        & ul {
+            transform: scale(1);
+
+            & li.sub-items {
+                transform: scale(1);
+                margin: 0.5rem;
+                padding: 10px 20px;
+
+                &:hover {
+                    background-color: var(--color-accent);
+                }
+            }
+        }
+    }
+}
+
+/* servicess option menu end */

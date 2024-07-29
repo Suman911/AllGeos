@@ -19,14 +19,14 @@ function Home() {
                 </div>
             </Top_container>
             <Body_Container bg_color='white'>
-                <div className='h-body' id="h-about">
+                <div className='page-body' id="h-about">
                     <h3>About Us</h3>
                     <div>
                         <div className="ha-cols">Welcome to AllGeo Solutions, a leading and dynamic organization dedicated to providing comprehensive solutions in the fields of Geology, Hydrogeology, Geophysical survey, Groundwater Explorations, and Environmental Services across the country.At AllGeo Solutions, we pride ourselves on our team of highly skilled and passionate professionals who possess extensive expertise in their respective domains. With a collective commitment to excellence and sustainability, we strive to meet the diverse needs of our clients, ranging from government agencies and private enterprises to non-profit organizations.Geology forms the foundation of our work, as we delve into the Earth&apos;s composition and geological processes to gain valuable insights into various projects. Our team of geologists excels in conducting in-depth surveys and assessments, identifying potential geological hazards, and providing informed guidance for successful project execution. Hydrogeology is another core pillar of our organization, as we focus on studying the distribution and movement of groundwater.</div>
                         <div className="ha-cols"><img src={home_demo} alt="demo" /></div>
                     </div>
                 </div>
-                <div className='h-body' id="h-services">
+                <div className='page-body' id="h-services">
                     <h3>Our Services</h3>
                     <div>
                         <details className='details' name='services-details' open>
@@ -51,7 +51,7 @@ function Home() {
                         </details>
                     </div>
                 </div>
-                <div className='h-body' id="h-product">
+                <div className='page-body' id="h-product">
                     <h3>Our Products</h3>
                     <div className="prod-img">
                         <div style={{ backgroundImage: `url(${home1})` }}>

@@ -15,10 +15,10 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route element={<Layout />}>
       <Route path='' element={<Home />} />
-      <Route path='contact' element={<Contact />} />
       <Route path='about' element={<About />} />
-      <Route path='blogs' element={<Blogs />} />
       <Route path='products' element={<Products />} />
+      <Route path='blogs' element={<Blogs />} />
+      <Route path='contact' element={<Contact />} />
       <Route path='Temp' element={<Temp />} />
       <Route path=':var' element={<Page_notFound />} />
     </Route>

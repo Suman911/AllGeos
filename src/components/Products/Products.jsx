@@ -1,7 +1,7 @@
 import './products.css';
 import Body_Container from '../../utill/Body_Container.jsx';
 import Top_container from '../../utill/Top_container.jsx';
-import {products_top} from '../../utill/images.jsx'
+import { products_top } from '../../utill/images.jsx'
 
 function Products() {
 
@@ -17,9 +17,7 @@ function Products() {
                 </div>
             </Top_container>
             <Body_Container>
-                <div>
-
-                </div>
+                
             </Body_Container>
         </>
     )

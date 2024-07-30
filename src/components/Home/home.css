@@ -4,9 +4,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    column-gap: 30px;
+    gap: 30px;
 
-    div {
+    .ha-cols {
         max-width: 400px;
         flex: 1 1 auto;
     }
@@ -19,8 +19,6 @@
 
 .details {
     margin: auto;
-    overflow: hidden;
-    height: 1.5rem;
     max-width: 800px;
     transition: height 0.5s ease-out;
 
@@ -46,7 +44,6 @@
 }
 
 .details[open] {
-    height: 160px;
 
     summary::before {
         content: url("data:image/svg+xml,%3Csvg width='1rem' height='1rem' viewBox='5 5 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 12H18' stroke='%2314506a' stroke-width='2' stroke-linecap='round' %3E%3C/path%3E%3C/svg%3E");

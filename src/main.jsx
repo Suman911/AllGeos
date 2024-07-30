@@ -1,3 +1,4 @@
+import './main.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Layout from './Layout.jsx';
@@ -9,7 +10,7 @@ import Products from './components/Products/Products.jsx'
 import Temp from './utill/Temp.jsx'
 import Page_notFound from './utill/Page_notFound.jsx'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
-import './main.css';
+import './media.css';
 
 const router = createBrowserRouter(
   createRoutesFromElements(

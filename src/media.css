@@ -1,0 +1,148 @@
+@media screen and (min-width: 1400px) {
+    .top-conatiner {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav#head {
+        height: 70px;
+        padding: 10px;
+
+        #logo>a>img {
+            padding: 0;
+        }
+
+        #nav-links {
+
+            .links {
+                padding: 5px !important;
+                font-size: 1rem !important;
+            }
+        }
+    }
+
+    #footer-info {
+        grid-template-columns: 350px auto;
+        grid-template-areas: 'farea-1 farea-3' 'farea-4 farea-2';
+        gap: 0;
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 720px) {
+
+    nav#head {
+
+        #nav-bar {
+            width: max-content;
+
+            #nav-links {
+                display: none;
+                height: auto;
+                width: 250px;
+                flex-direction: column;
+                row-gap: 30px;
+                position: absolute;
+                right: 10px;
+                font-size: 1.5rem;
+                background-color: var(--nav-mobile-bg);
+                padding: 20px;
+
+                .items {
+                    padding: 10px;
+                    width: max-content;
+
+                    .links {
+                        color: white;
+                    }
+
+                    #arrow {
+                        fill: white;
+                    }
+                }
+
+                #services {
+                    position: relative;
+                    height: 2.4rem;
+                    overflow: hidden;
+
+                    ul {
+                        background-color: var(--nav-mobile-bg);
+                        transform: scaleY(0);
+                        position: relative;
+
+                        li.sub-items {
+                            transform: scaleY(0);
+                            margin: 0;
+                        }
+
+                    }
+
+                    &:hover {
+                        overflow: visible;
+                        height: auto;
+
+                        ul {
+                            transform: scaleY(1);
+
+                            li.sub-items {
+                                transform: scaleY(1);
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            #menu-icon {
+                display: block;
+            }
+
+            &:hover {
+                #nav-links {
+                    display: initial;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 512px) {
+
+    .body-conatiner {
+        padding: 20px 10px;
+    }
+
+    .top-conatiner {
+        background-attachment: scroll;
+    }
+
+    #about-card {
+        .card-container {
+            min-width: 200px !important;
+        }
+    }
+
+    .about-cols {
+        min-width: 0 !important;
+    }
+
+    #footeinfo-area-4 {
+        width: 250px;
+    }
+
+    #footer-info {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 'farea-1 farea-1' 'farea-2 farea-3' 'farea-4 farea-4';
+
+        &>div {
+            padding: 0;
+        }
+    }
+
+    #dev-copyright {
+        font-size: 1rem;
+    }
+}

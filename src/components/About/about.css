@@ -108,6 +108,7 @@
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 10%;
+    row-gap: 10px;
 
     div {
         text-align: center;

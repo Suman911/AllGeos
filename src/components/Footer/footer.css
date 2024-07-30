@@ -13,7 +13,8 @@
     color: white;
     grid-area: farea-1;
     align-content: center;
-    line-height: 2.5rem;
+    text-align: center;
+    line-height: 2rem;
 }
 
 #footeinfo-area-2 {
@@ -30,10 +31,10 @@
 
 #footer-info {
     display: grid;
-    grid-template-columns: 400px 200px 200px 400px;
+    grid-template-columns: 300px auto auto 300px;
     grid-template-areas: 'farea-1 farea-2 farea-3 farea-4';
     grid-gap: 20px;
-    padding: 10px;
+    padding: 30px;
     justify-items: center;
     justify-content: center;
     
@@ -53,7 +54,7 @@
 }
 
 #rec_img_l {
-    width: 300px;
+    width: 90%;
     grid-area: rec_img_l;
 }
 
@@ -98,6 +99,8 @@
     border-radius: 5px;
     align-content: center;
     text-align: center;
+
+    transition: opacity 0.5s ease;
 
     &>svg {
         width: 24px;

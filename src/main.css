@@ -11,7 +11,9 @@
     --footer-contact-svg: #288fe4;
     --about-card: #8a35ff;
     --about-card-hover: #502fc6;
+    --bg-w-t: #ffffff7e;
     --max-content-width: 2000px;
+    --nav-mobile-bg: #000000b4;
 }
 
 *,
@@ -19,6 +21,10 @@
 ::before {
     font-family: var(--primary-font-family), serif !important;
     box-sizing: border-box;
+}
+
+button {
+    all: unset;
 }
 
 a {
@@ -56,5 +62,5 @@ body {
 }
 
 .bg-w-t {
-    background-color: #ffffff7e;
+    background-color: var(--bg-w-t);
 }

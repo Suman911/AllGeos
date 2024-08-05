@@ -30,7 +30,6 @@ nav#head {
 
     #logo>a>img {
         height: 100%;
-        padding: 10px 20px;
     }
 
     #nav-bar {
@@ -51,8 +50,8 @@ nav#head {
 
             .links {
                 color: var(--color-primary);
-                padding: 10px 15px;
-                font-size: 1.2rem;
+                padding: 5px;
+                font-size: 1rem;
 
                 &.active {
                     background-color: var(--color-primary-light);

@@ -10,9 +10,6 @@
 
 @media screen and (max-width: 1024px) {
     nav#head {
-        height: 70px;
-        padding: 10px;
-
         #logo>a>img {
             padding: 0;
         }

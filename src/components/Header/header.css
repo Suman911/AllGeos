@@ -22,22 +22,22 @@ div#progressbar {
 }
 
 nav#head {
-    height: 100px;
+    height: 70px;
     width: 100%;
     display: flex;
-    padding: 5px 20px;
+    padding: 10px;
     justify-content: space-between;
-    
+
     #logo>a>img {
         height: 100%;
         padding: 10px 20px;
     }
-    
+
     #nav-bar {
         width: 800px;
         flex-shrink: 1;
     }
-    
+
     #nav-links {
         z-index: 10;
         height: 100%;

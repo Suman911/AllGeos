@@ -1,36 +1,11 @@
 import './footer.css';
-import { useState } from 'react';
 import { footer1, footer2, footer3, footer4 } from '../../utill/images';
 import { Link } from 'react-router-dom';
-
-// const topFunction = ()=>{
-
-// }
-
+import To_top from '../../utill/To_top';
 
 function Footer() {
 
-    const [visible, setVisible] = useState(false)
-
-    const toggleVisible = () => {
-        const scrolled = document.documentElement.scrollTop;
-        if (scrolled > 300) {
-            setVisible(true)
-        }
-        else if (scrolled <= 300) {
-            setVisible(false)
-        }
-    };
-
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    };
-
-    window.addEventListener('scroll', toggleVisible);
-
+    const { visible, scrollToTop } = To_top()
 
     return (
         <>
@@ -45,20 +20,20 @@ function Footer() {
                         <div className="footeinfo-links" id="footeinfo-area-2">
                             <h4 className="footer-headings"> Our Pages</h4>
                             <div className='page-links'>
-                                <Link to="/">Home</Link>
-                                <Link to="/about">About Us</Link>
-                                <Link to="/">Services</Link>
-                                <Link to="/products">Products</Link>
-                                <Link to="/blogs">Blog</Link>
-                                <Link to="/contact">Contsct Us</Link>
+                                <Link onClick={scrollToTop} to="/">Home</Link>
+                                <Link onClick={scrollToTop} to="/about">About Us</Link>
+                                <Link onClick={scrollToTop} to="/Temp">Services</Link>
+                                <Link onClick={scrollToTop} to="/products">Products</Link>
+                                <Link onClick={scrollToTop} to="/blogs">Blog</Link>
+                                <Link onClick={scrollToTop} to="/contact">Contsct Us</Link>
                             </div>
                         </div>
                         <div className="footeinfo-links" id="footeinfo-area-3">
                             <h4 className="footer-headings">Other Links</h4>
                             <div className='page-links'>
-                                <Link to="/">Terms And Conditions</Link>
-                                <Link to="/">Privacy Policy</Link>
-                                <Link to="/">FAQ&apos;s</Link>
+                                <Link onClick={scrollToTop} to="/#">Terms And Conditions</Link>
+                                <Link onClick={scrollToTop} to="/#">Privacy Policy</Link>
+                                <Link onClick={scrollToTop} to="/#">FAQ&apos;s</Link>
                             </div>
                         </div>
                         <div className="footeinfo-side" id="footeinfo-area-4">

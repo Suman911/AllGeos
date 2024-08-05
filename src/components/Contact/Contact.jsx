@@ -16,7 +16,7 @@ function Contact() {
                     </div>
                 </div>
             </Top_container>
-            <Body_Container>
+            <Body_Container id='contact-body'>
                 <Contact_form />
             </Body_Container>
         </>

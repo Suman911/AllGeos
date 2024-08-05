@@ -1,7 +1,7 @@
 import Body_Container from './Body_Container.jsx';
 import Top_container from './Top_container.jsx';
 
-function Page_notFound() {
+function PagenotFound() {
 
     return (
         <><Top_container>
@@ -20,4 +20,4 @@ function Page_notFound() {
     )
 }
 
-export default Page_notFound
+export default PagenotFound

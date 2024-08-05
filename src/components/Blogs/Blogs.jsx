@@ -11,11 +11,11 @@ function Blogs() {
                 <div id="title" className='bg-w-t'>
                     <h1>Welcome To AllGeo Solutions</h1>
                     <h3><em>&quot;Navigating Earth&apos;s Complexities, Delivering Solutions&quot;</em></h3>
-                    <div className='base'>Geospatial Services || Geological Services || Geophysical Services|| Hydrogeological Solutions || Environmental Services</div>
+                    <div className='base'>Geospatial Services || Geological Services || Geophysical Services || Hydrogeological Solutions || Environmental Services</div>
                 </div>
             </div>
         </Top_container>
-            <Body_Container bg_color='white'>
+            <Body_Container id='blog-body' bg_color='white'>
                 <Contact_form />
             </Body_Container>
         </>

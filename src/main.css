@@ -21,6 +21,7 @@
 ::before {
     font-family: var(--primary-font-family), serif !important;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
 }
 
 button {
@@ -33,6 +34,14 @@ a {
 
 li {
     list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+summary::-webkit-details-marker {
+    display: none;
 }
 
 body::-webkit-scrollbar {
@@ -48,6 +57,7 @@ body {
     margin: auto;
     padding: 0;
     max-width: var(--max-content-width);
+    user-select: none;
 }
 
 .btn {
@@ -63,4 +73,18 @@ body {
 
 .bg-w-t {
     background-color: var(--bg-w-t);
+}
+
+.maxW-800px {
+    max-width: 800px;
+    margin: auto;
+}
+
+.w-80 {
+    text-align: center;
+
+    img {
+        width: 80%;
+        height: auto;
+    }
 }

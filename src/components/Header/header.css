@@ -1,49 +1,45 @@
-/* Top pregress bar start*/
 div#progressbar {
     height: 5px;
     width: 100%;
-    background-color: var(--color-accent);
+    background-color: var(--color-primary);
     position: fixed;
-    z-index: 100;
+    z-index: 5;
     scale: 0 1;
     transform-origin: left;
     animation: scaleProgress auto linear;
     animation-timeline: scroll();
-
 }
 
 @keyframes scaleProgress {
     75% {
-        background-color: var(--color-primary);
+        background-color: var(--color-accent);
     }
 
     100% {
         scale: 1 1;
-        background-color: var(--color-primary);
+        background-color: var(--color-accent);
     }
 }
 
-/* Top pregress bar end*/
-
-/* navbar structure start */
 nav#head {
     height: 100px;
     width: 100%;
     display: flex;
     padding: 5px 20px;
     justify-content: space-between;
-
+    
     #logo>a>img {
         height: 100%;
         padding: 10px 20px;
     }
-
+    
     #nav-bar {
         width: 800px;
         flex-shrink: 1;
     }
-
+    
     #nav-links {
+        z-index: 10;
         height: 100%;
         align-items: center;
         display: flex;
@@ -97,9 +93,6 @@ nav#head {
     }
 }
 
-/* navbar structure end */
-
-/* servicess option menu start */
 #services {
     position: relative;
 
@@ -156,5 +149,3 @@ nav#head {
         }
     }
 }
-
-/* servicess option menu end */

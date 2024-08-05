@@ -17,7 +17,7 @@ function About() {
                     </div>
                 </div>
             </Top_container>
-            <Body_Container>
+            <Body_Container id='about-body'>
                 <div className='bg-w-t page-body'>
                     <h3>Our Journey</h3>
                     <div>

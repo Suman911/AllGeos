@@ -1,0 +1,44 @@
+#prduct-body {
+    li {
+        list-style: initial;
+    }
+
+    .enq {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .prod-body {
+        display: flex;
+        flex-wrap: wrap;
+
+        .prod-desc {
+            width: 60%;
+            flex: 1 1 auto;
+        }
+
+        .products {
+            padding: 20px;
+            width: 300px;
+            flex: 1 1 auto;
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            gap: 20px;
+
+            img {
+                height: auto;
+                flex: 1 1 auto;
+                max-width: 300px;
+                width: 100%;
+            }
+        }
+
+        #stem>img {
+            width: 120px;
+            max-width: 200px;
+        }
+    }
+}

@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import './body_container.css'
 
-function Body_Container({ children, bg_color = "none" }) {
+function Body_Container({id="", children, bg_color = "none" }) {
     const style = {
         backgroundColor: bg_color
     }
     return (
-        <section className="body-conatiner" style={style}>
+        <section id={id} className="body-conatiner" style={style}>
             {children}
         </section>
     )
@@ -14,7 +14,8 @@ function Body_Container({ children, bg_color = "none" }) {
 
 Body_Container.propTypes = {
     children: PropTypes.node,
-    bg_color: PropTypes.string
+    bg_color: PropTypes.string,
+    id: PropTypes.string
 }
 
 export default Body_Container;

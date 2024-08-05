@@ -9,6 +9,10 @@
 }
 
 @media screen and (max-width: 1024px) {
+    nav#head #nav-links .links {
+        padding: 5px !important;
+    }
+
     #footer-info {
         grid-template-columns: 350px auto;
         grid-template-areas: 'farea-1 farea-3' 'farea-4 farea-2';

@@ -73,6 +73,7 @@
                 transition-delay: 0s;
 
                 ul {
+                    top: 0;
                     background-color: var(--nav-mobile-bg);
                     transform: scaleY(0);
                     position: relative;

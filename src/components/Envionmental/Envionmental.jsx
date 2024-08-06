@@ -9,7 +9,7 @@ export default function Envionmental() {
       <Top_container bg_image={""}>
         <div>
           <div id="title" className='bg-w-t'>
-            <h1>Environmental Insights</h1>
+            <h1>Environ&shy;mental Insights</h1>
             <h3 className='h3-spred'>WELCOME TO OUR SPACE</h3>
           </div>
         </div>

@@ -11,7 +11,7 @@ export default function Hydrogeological() {
       <Top_container bg_image={hydrogeological}>
         <div>
           <div id="title" className='bg-w-t'>
-            <h1>Hydrogeological Solutions</h1>
+            <h1 lang='de'>Hydro&shy;geological Solutions</h1>
             <h3 className='h3-spred'>WELCOME TO OUR SPACE</h3>
           </div>
         </div>

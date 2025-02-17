@@ -47,9 +47,9 @@ function Footer() {
                         </div>
                     </div>
                     <div id="dev-copyright">
-                        <span id="dc-1">&copy; Copyright by <em>AllGeo Solutions</em></span>
+                        <span id="dc-1">&copy; Copyright by <em>Suman911@GitHub</em></span>
                         <span id="dc-2">| |</span>
-                        <span id="dc-3">Developed by <em>UMID Infotech</em></span>
+                        <span id="dc-3">Developed by <em>Suman Mondal</em></span>
                     </div>
                 </div>
             </footer>

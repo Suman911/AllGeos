@@ -47,9 +47,13 @@ function Footer() {
                         </div>
                     </div>
                     <div id="dev-copyright">
-                        <span id="dc-1">&copy; Copyright by <em>Suman911@GitHub</em></span>
+                        <span id="dc-1">&copy; Copyright by
+                            <a href="https://github.com/Suman911/AllGeos"><em>Suman911@GitHub</em></a>
+                        </span>
                         <span id="dc-2">| |</span>
-                        <span id="dc-3">Developed by <em>Suman Mondal</em></span>
+                        <span id="dc-3">Developed by 
+                            <a href="https://www.linkedin.com/in/suman-mondal-ba0757238"><em>Suman Mondal</em></a>
+                        </span>
                     </div>
                 </div>
             </footer>
